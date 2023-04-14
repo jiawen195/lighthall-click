@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  var storedCount = parseInt(localStorage.getItem('count'));
+  if (isNaN(storedCount)) {
+    storedCount = 0;
+  }
+  const [count, setCount] = useState(storedCount);
+
+  useEffect(() => {
+    localStorage.setItem('count', count);
+  }, [count])
+
+  const handleClick = () => {
+    setCount(count + 1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Click Count: {count}
+      </h1>
+      <button onClick={handleClick}>Click</button>
     </div>
   );
 }
