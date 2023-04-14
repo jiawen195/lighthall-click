@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h1>
         Click Count: {count}
       </h1>
