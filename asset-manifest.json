@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lighthall-click/static/css/main.073c9b0a.css",
+    "main.js": "/lighthall-click/static/js/main.65c25cd3.js",
+    "static/js/787.003155d4.chunk.js": "/lighthall-click/static/js/787.003155d4.chunk.js",
+    "index.html": "/lighthall-click/index.html",
+    "main.073c9b0a.css.map": "/lighthall-click/static/css/main.073c9b0a.css.map",
+    "main.65c25cd3.js.map": "/lighthall-click/static/js/main.65c25cd3.js.map",
+    "787.003155d4.chunk.js.map": "/lighthall-click/static/js/787.003155d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.65c25cd3.js"
+  ]
+}
